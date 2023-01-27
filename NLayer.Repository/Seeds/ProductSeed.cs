@@ -19,7 +19,7 @@ namespace NLayer.Repository.Seeds
                 new Product { Id = 3, CategoryId = 2, Name = "IPad", Price = 900, Stock = 10 },
                 new Product { Id = 4, CategoryId = 2, Name = "Samsung Tab", Price = 400, Stock = 20 },
                 new Product { Id = 5, CategoryId = 3, Name = "Hp Pavilion 15", Price = 750, Stock = 10 },
-                new Product { Id = 5, CategoryId = 3, Name = "Lenovo ThinkPad", Price = 1500, Stock = 10 }
+                new Product { Id = 6, CategoryId = 3, Name = "Lenovo ThinkPad", Price = 1500, Stock = 10 }
                 );
         }
     }

@@ -10,8 +10,8 @@ namespace NLayer.Core.Entities
     {
         public int Id { get; set; }
         public string? Color { get; set; }
-        public decimal Height { get; set; }
-        public string Width { get; set; }
+        public decimal? Height { get; set; }
+        public decimal? Width { get; set; }
 
 
         public int ProductId { get; set; }
