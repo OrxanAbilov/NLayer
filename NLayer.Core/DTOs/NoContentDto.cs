@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace NLayer.Core.DTOs
 {
-    public class BaseDto
+    public class NoContentDto
     {
-        public int Id { get; set; }
-        //public DateTime CreatedDate { get; set; }
     }
 }

@@ -2,21 +2,23 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace NLayer.Core.DTOs
 {
-    public class CustomResponseDto<T> where T:class
+    public class CustomResponseDto<T>
     {
+        [JsonIgnore]
         public int StatusCode { get; set; }
-        public List<T> Data { get; set; }
+        public T Data { get; set; }
         public ExceptionDto Exception { get; set; }
 
 
 
 
         //Success with Data
-        public static CustomResponseDto<T> Success(int statusCode,List<T> data)
+        public static CustomResponseDto<T> Success(int statusCode,T data)
         {
             return new CustomResponseDto<T> { Data = data, StatusCode = statusCode };
         }
