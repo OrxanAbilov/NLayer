@@ -12,7 +12,7 @@ namespace NLayer.Core.DTOs
         [JsonIgnore]
         public int StatusCode { get; set; }
         public T Data { get; set; }
-        public ExceptionDto Exception { get; set; }
+        public List<string> Exception { get; set; }
 
 
 
@@ -29,9 +29,9 @@ namespace NLayer.Core.DTOs
         }
 
         //Fail with Exception
-        public static CustomResponseDto<T> Fail(int statusCode, ExceptionDto exception)
+        public static CustomResponseDto<T> Fail(int statusCode, List<string> exceptions)
         {
-            return new CustomResponseDto<T> { StatusCode = statusCode, Exception = exception };
+            return new CustomResponseDto<T> { StatusCode = statusCode, Exception = exceptions };
         }
 
 
